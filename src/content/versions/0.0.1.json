@@ -1,0 +1,16 @@
+{
+  "sidebar": [
+    {
+      "label": "Allgemeine Informationen",
+      "autogenerate": {
+        "directory": "allgemein"
+      }
+    },
+    {
+      "label": "Provider",
+      "autogenerate": {
+        "directory": "providers"
+      }
+    }
+  ]
+}
