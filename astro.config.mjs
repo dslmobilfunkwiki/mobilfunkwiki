@@ -11,6 +11,8 @@ import starlightVersions from "starlight-versions";
 import cloudflare from "@astrojs/cloudflare";
 import emoji from "remark-emoji";
 
+import yeskunallumami from "@yeskunall/astro-umami";
+
 // https://astro.build/config
 export default defineConfig({
   output: "server",
@@ -68,6 +70,10 @@ export default defineConfig({
       remarkPlugins: [emoji],
       // `gfm` overridden to `false`
       gfm: true,
+    }),
+    yeskunallumami({
+      id: "9f05e666-265a-4e30-b90c-14e60c0cdc36",
+      endpointUrl: "https://stats.dsl.wiki/",
     }),
   ],
 
