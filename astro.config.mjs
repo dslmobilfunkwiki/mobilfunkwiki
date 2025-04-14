@@ -10,7 +10,7 @@ import starlightHeadingBadges from "starlight-heading-badges";
 import starlightVersions from "starlight-versions";
 import cloudflare from "@astrojs/cloudflare";
 import emoji from "remark-emoji";
-
+ 
 import yeskunallumami from "@yeskunall/astro-umami";
 
 // https://astro.build/config
@@ -27,7 +27,7 @@ export default defineConfig({
         starlightVersions({
           versions: [{ slug: "0.0.1" }],
         }),
-      ],
+       ],
       customCss: [
         // Relative path to your custom CSS file
         "./src/styles/custom.css",
