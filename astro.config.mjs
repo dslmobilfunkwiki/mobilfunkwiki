@@ -21,6 +21,7 @@ export default defineConfig({
   },
   integrations: [
     starlight({
+      lastUpdated: true,
       plugins: [
         starlightAutoSidebar(),
         starlightHeadingBadges(),
@@ -57,8 +58,12 @@ export default defineConfig({
           autogenerate: { directory: "allgemein" },
         },
         {
-          label: "Provider",
+          label: "Netzbetreiber & Provider",
           autogenerate: { directory: "providers" },
+        },
+        {
+          label: "Anbieter & Marken",
+          autogenerate: { directory: "anbieter" },
         },
       ],
     }),
