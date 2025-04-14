@@ -1,4 +1,4 @@
 /*
-Content-Security-Policy: default-src 'self' script-src: 'unsafe-inline' frame-ancestors 'self';
+Content-Security-Policy: default-src 'self' script-src: 'unsafe-inline' stats.dsl.wiki frame-ancestors 'self';
 X-Frame-Options: SAMEORIGIN
 X-Content-Type-Options: nosniff
