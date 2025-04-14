@@ -1,0 +1,25 @@
+---
+title: Welcome to Mobilfunk.wiki
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  actions:
+    - text: Enter the Wiki
+      link: /0.0.2/allgemein/
+      icon: right-arrow
+slug: 0.0.2
+---
+
+import CustomLinkCard from "../../../components/CustomLinkCard.astro";
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+<CardGrid stagger>
+  <CustomLinkCard title="Allgemeines" icon="pencil" href="/allgemein/">
+    Allgemeine Informationen zur Seite
+  </CustomLinkCard>
+
+  <CustomLinkCard title="Anbieter" icon="setting" href="/providers/">
+    Übersicht über die aktuellen Mobilfunkanbieter in Deutschland
+  </CustomLinkCard>
+</CardGrid>

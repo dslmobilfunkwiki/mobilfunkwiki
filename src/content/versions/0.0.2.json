@@ -1,0 +1,22 @@
+{
+  "sidebar": [
+    {
+      "label": "Allgemeine Informationen",
+      "autogenerate": {
+        "directory": "allgemein"
+      }
+    },
+    {
+      "label": "Netzbetreiber & Provider",
+      "autogenerate": {
+        "directory": "providers"
+      }
+    },
+    {
+      "label": "Anbieter & Marken",
+      "autogenerate": {
+        "directory": "anbieter"
+      }
+    }
+  ]
+}
