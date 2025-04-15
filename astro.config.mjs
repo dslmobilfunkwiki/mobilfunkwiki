@@ -8,10 +8,11 @@ import mdx from "@astrojs/mdx";
 import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightHeadingBadges from "starlight-heading-badges";
 import starlightVersions from "starlight-versions";
-import cloudflare from "@astrojs/cloudflare";
 import emoji from "remark-emoji";
 
 import yeskunallumami from "@yeskunall/astro-umami";
+
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
@@ -82,8 +83,8 @@ export default defineConfig({
     }),
   ],
 
-  adapter: cloudflare({
-    imageService: "passthrough",
+  adapter: node({
+    mode: "standalone",
   }),
 });
 // https://astro.build/config
