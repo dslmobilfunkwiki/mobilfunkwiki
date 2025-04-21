@@ -27,8 +27,8 @@ importers:
         specifier: ^5.7.0
         version: 5.7.0(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
       daisyui:
-        specifier: ^5.0.20
-        version: 5.0.20
+        specifier: ^5.0.27
+        version: 5.0.27
       remark-emoji:
         specifier: ^5.0.1
         version: 5.0.1
@@ -1004,8 +1004,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  daisyui@5.0.20:
-    resolution: {integrity: sha512-dR9WSFsWG5bHuwTnlcuh/MZFROaddxB+BFxB06EgDy7gU5M7eY/RsY1g/DwCMwgnqS7dEsjxNd/x+WgC3N+TDQ==}
+  daisyui@5.0.27:
+    resolution: {integrity: sha512-XrpqgfpGaZJvTPg9pS9Rq6xbYpmMnR0a7AKqyVPZceJzjAs5HH3rfkRkiuGin0+KC2Adnu+WLHU7UDxAtCMyAw==}
 
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
@@ -3186,7 +3186,7 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  daisyui@5.0.20: {}
+  daisyui@5.0.27: {}
 
   debug@4.4.0:
     dependencies:
