@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/mdx": "^4.2.4",
     "@astrojs/node": "^9.2.0",
-    "@astrojs/starlight": "^0.33.2",
+    "@astrojs/starlight": "^0.34.0",
     "@tailwindcss/vite": "^4.1.4",
     "@yeskunall/astro-umami": "^0.0.4",
     "astro": "^5.7.0",
