@@ -1,0 +1,39 @@
+name: Dockerupdate
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+on:
+#  schedule:
+#    - cron: '34 17 * * *'
+  push:
+    branches: [ "main" ]
+#  pull_request:
+#    branches: [ "main-skeleton" ]
+
+env:
+  # Use docker.io for Docker Hub if empty
+  REGISTRY: ghcr.io
+  # github.repository as <account>/<repo>
+  IMAGE_NAME: ${{ github.repository }}
+
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      # This is used to complete the identity challenge
+      # with sigstore/fulcio when running outside of PRs.
+      id-token: write
+
+    steps:
+    - name: Webhook
+      uses: joelwmale/webhook-action@master
+      with:
+        url: ${{ secrets.WEBHURL }}
+        headers: '{"Authorization": "${{ secrets.SECRET }}"}'
+        github_event_payload: false
