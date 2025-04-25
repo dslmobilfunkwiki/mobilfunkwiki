@@ -86,7 +86,7 @@ jobs:
       - name: Webhook
         uses: joelwmale/webhook-action@master
         with:
-          url: ${{ secrets.URL }}
+          url: ${{ secrets.WEBHURL }}
           headers: '{"Authorization": "${{ secrets.SECRET }}"}'
           github_event_payload: false
       # Sign the resulting Docker image digest except on PRs.
