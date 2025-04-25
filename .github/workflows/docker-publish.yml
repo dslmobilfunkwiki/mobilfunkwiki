@@ -87,7 +87,7 @@ jobs:
         uses: joelwmale/webhook-action@master
         with:
           url: ${{ secrets.URL }}
-          headers: '{"Authorization": "Bearer  ${{ secrets.SECRET }}"}'
+          headers: '{"Authorization": "${{ secrets.SECRET }}"}'
           github_event_payload: false
       # Sign the resulting Docker image digest except on PRs.
       # This will only write to the public Rekor transparency log when the Docker
