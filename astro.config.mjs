@@ -5,10 +5,9 @@ import tailwindcss from "@tailwindcss/vite";
 import mdx from "@astrojs/mdx";
 
 // starlight plugins
-import starlightAutoSidebar from "starlight-auto-sidebar";
 import starlightHeadingBadges from "starlight-heading-badges";
-import starlightVersions from "starlight-versions";
 import emoji from "remark-emoji";
+import starlightSidebarTopics from "starlight-sidebar-topics";
 
 import yeskunallumami from "@yeskunall/astro-umami";
 
@@ -24,11 +23,53 @@ export default defineConfig({
     starlight({
       lastUpdated: true,
       plugins: [
-        starlightAutoSidebar(),
         starlightHeadingBadges(),
-        starlightVersions({
-          versions: [{ slug: "0.0.2" }, { slug: "0.0.1" }],
-        }),
+        starlightSidebarTopics([
+          {
+            label: "Allgemeine Infos",
+            link: "/allgemein/",
+            icon: "seti:info",
+            items: [
+              {
+                label: "Allgemeine Infos",
+                autogenerate: { directory: "allgemein" },
+              },
+            ],
+          },
+          {
+            label: "Netzbetreiber & Provider",
+            link: "/providers/",
+            icon: "seti:info",
+            items: [
+              {
+                label: "Netzbetreiber & Provider",
+                autogenerate: { directory: "providers" },
+              },
+            ],
+          },
+          {
+            label: "Prepaid Anbieter & Marken",
+            link: "/prepaid/",
+            icon: "seti:info",
+            items: [
+              {
+                label: "Prepaid Anbieter & Marken",
+                autogenerate: { directory: "prepaid" },
+              },
+            ],
+          },
+          {
+            label: "Postpaid Anbieter & Marken",
+            link: "/postpaid/",
+            icon: "seti:info",
+            items: [
+              {
+                label: "Postpaid Anbieter & Marken",
+                autogenerate: { directory: "postpaid" },
+              },
+            ],
+          },
+        ]),
       ],
       customCss: [
         // Relative path to your custom CSS file
@@ -53,20 +94,6 @@ export default defineConfig({
           href: "https://github.com/dslmobilfunkwiki/mobilfunkwiki",
         },
       ],
-      sidebar: [
-        {
-          label: "Allgemeine Informationen",
-          autogenerate: { directory: "allgemein" },
-        },
-        {
-          label: "Netzbetreiber & Provider",
-          autogenerate: { directory: "providers" },
-        },
-        {
-          label: "Anbieter & Marken",
-          autogenerate: { directory: "anbieter" },
-        },
-      ],
     }),
     mdx({
       // `syntaxHighlight` inherited from Markdown
@@ -82,7 +109,6 @@ export default defineConfig({
       endpointUrl: "https://stats.dsl.wiki/",
     }),
   ],
-
   adapter: node({
     mode: "standalone",
   }),
