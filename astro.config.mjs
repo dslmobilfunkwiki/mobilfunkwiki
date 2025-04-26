@@ -19,9 +19,13 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: "https://mobilfunk.wiki",
   integrations: [
     starlight({
       lastUpdated: true,
+      editLink: {
+        baseUrl: "https://github.com/dslmobilfunkwiki/mobilfunkwiki/edit/main/",
+      },
       plugins: [
         starlightHeadingBadges(),
         starlightSidebarTopics([
