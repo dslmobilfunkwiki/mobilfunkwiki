@@ -4,5 +4,3 @@ services:
     image: ghcr.io/dslmobilfunkwiki/mobilfunkwiki:latest
     restart: unless-stopped
     container_name: mobilfunk-wiki
-    ports:
-      - 4321:4321
