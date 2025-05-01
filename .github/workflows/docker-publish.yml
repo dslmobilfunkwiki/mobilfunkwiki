@@ -66,7 +66,6 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=raw,value=latest-amd64
-            type=raw,value=latest-arm64
             type=raw,value=latest
             type=raw,value=${{ github.sha }}
       # Build and push Docker image with Buildx (don't push on PR)
