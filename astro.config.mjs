@@ -85,17 +85,6 @@ export default defineConfig({
         "./src/styles/custom.css",
       ],
       title: "Mobilfunk Wiki",
-      defaultLocale: "root", // optional
-      locales: {
-        root: {
-          label: "Deutsch",
-          lang: "de", // lang is required for root locales
-        },
-        en: {
-          label: "English",
-          lang: "en", // lang is required for root locales
-        },
-      },
       social: [
         {
           icon: "github",
