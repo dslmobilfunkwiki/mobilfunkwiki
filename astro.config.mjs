@@ -14,6 +14,7 @@ import yeskunallumami from "@yeskunall/astro-umami";
 import node from "@astrojs/node";
 
 // https://astro.build/config
+// @ts-ignore
 export default defineConfig({
   output: "server",
   vite: {
@@ -25,6 +26,10 @@ export default defineConfig({
       lastUpdated: true,
       editLink: {
         baseUrl: "https://github.com/dslmobilfunkwiki/mobilfunkwiki/edit/main/",
+      },
+      components: {
+        // Override the default `Sidebar` component with a custom one.
+        Sidebar: "./src/components/Sidebar.astro",
       },
       plugins: [
         starlightHeadingBadges(),
@@ -52,7 +57,7 @@ export default defineConfig({
             ],
           },
           {
-            label: "Prepaid Anbieter & Marken",
+            label: "Prepaid",
             link: "/prepaid/",
             icon: "seti:info",
             items: [
@@ -63,7 +68,7 @@ export default defineConfig({
             ],
           },
           {
-            label: "Postpaid Anbieter & Marken",
+            label: "Postpaid",
             link: "/postpaid/",
             icon: "seti:info",
             items: [
