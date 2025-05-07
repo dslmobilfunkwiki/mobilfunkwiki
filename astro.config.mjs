@@ -26,6 +26,7 @@ export default defineConfig({
   site: "https://mobilfunk.wiki",
   integrations: [
     starlight({
+      defaultLocale: 'de',
       lastUpdated: true,
       editLink: {
         baseUrl: "https://github.com/dslmobilfunkwiki/mobilfunkwiki/edit/main/",
