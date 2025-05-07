@@ -8,6 +8,8 @@ import mdx from "@astrojs/mdx";
 import starlightHeadingBadges from "starlight-heading-badges";
 import emoji from "remark-emoji";
 import starlightSidebarTopics from "starlight-sidebar-topics";
+import { remarkExtendedTable, extendedTableHandlers } from 'remark-extended-table';
+import remarkGfm from 'remark-gfm'
 
 import yeskunallumami from "@yeskunall/astro-umami";
 
@@ -20,6 +22,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  server: { port: 9000, host: true },
   site: "https://mobilfunk.wiki",
   integrations: [
     starlight({
@@ -98,9 +101,14 @@ export default defineConfig({
 
       // Markdown `remarkPlugins` ignored,
       // only `remarkPlugin2` applied.
-      remarkPlugins: [emoji],
+      remarkPlugins: [emoji,
+        [remarkGfm, {tableCellPadding: false}],
+        [remarkExtendedTable, {tableCellPadding: false}]],
       // `gfm` overridden to `false`
       gfm: true,
+      remarkRehype: {
+        handlers: { ...extendedTableHandlers },
+      },
     }),
     yeskunallumami({
       id: "9f05e666-265a-4e30-b90c-14e60c0cdc36",

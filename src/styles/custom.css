@@ -23,3 +23,6 @@ table {
     min-width: 0;
     flex-shrink: 0;
   }
+  .sl-markdown-content table :is(th, td):not(:where(.not-content *)) {
+    padding-left: 0;
+  }
