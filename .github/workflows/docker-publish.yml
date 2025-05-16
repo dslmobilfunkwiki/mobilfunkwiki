@@ -90,7 +90,7 @@ jobs:
     steps:          
 
     - name: Invoke deployment hook
-      uses: BunnyWay/actions/container-update-image@main
+      uses: gordyf/actions/container-update-image@issue-19-fix
       with:
        app_id: ${{ vars.APP_ID }}
        api_key: ${{ secrets.BUNNYNET_API_KEY }}
