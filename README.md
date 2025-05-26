@@ -1,54 +1,54 @@
-# Starlight Starter Kit: Basics
+# Mobilfunk Wiki
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+[![Built with Starlight](https://astro.badg.es/starlight/built-with-starlight.svg)](https://starlight.astro.build)
 
-```
-pnpm create astro@latest -- --template starlight
-```
+Mobilfunk Wiki is a comprehensive knowledge base dedicated to German mobile network providers, services, and related topics. The live site can be accessed at [https://mobilfunk.wiki](https://mobilfunk.wiki).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+## About the Project
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This project aims to provide clear and detailed information covering a range of mobile communication topics relevant to Germany. This includes:
 
-## 🚀 Project Structure
+*   **General Information:** Fundamental concepts and FAQs related to mobile networks and services.
+*   **Network Providers:** In-depth details about major German network operators (e.g., Telekom, Vodafone, O2) and other providers.
+*   **Prepaid Plans:** Information on various prepaid tariffs, their features, and providers.
+*   **Postpaid Plans:** Information on contract-based postpaid tariffs, their features, and providers.
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+The content is structured to be easily navigable and informative for users seeking to understand the German mobile landscape.
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+## Tech Stack
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+The Mobilfunk Wiki is built using modern web technologies:
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+*   **[Astro](https://astro.build/):** The web framework for building fast, content-focused websites.
+*   **[Starlight](https://starlight.astro.build/):** An Astro-based documentation theme used for the site's structure and features.
+*   **[TailwindCSS](https://tailwindcss.com/):** A utility-first CSS framework for styling.
+*   **[MDX](https://mdxjs.com/):** Used for creating content, allowing the use of JSX components within Markdown.
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## Project Structure
 
-## 🧞 Commands
+This project is a standard [Starlight](https://starlight.astro.build/) project. You can learn more about Starlight in its [documentation](https://starlight.astro.build/).
+
+The main content of the wiki is located in the `src/content/docs/` directory.
+
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `pnpm install`    | Installs dependencies                        |
+| `pnpm dev`        | Starts local dev server at `localhost:9000`  |
+| `pnpm build`      | Build your production site to `./dist/`      |
+| `pnpm preview`    | Preview your build locally, before deploying |
 
-## 👀 Want to learn more?
+## Repository
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+The source code for Mobilfunk Wiki is hosted on GitHub: [https://github.com/dslmobilfunkwiki/mobilfunkwiki](https://github.com/dslmobilfunkwiki/mobilfunkwiki)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue on the GitHub repository.
+
+## License
+
+This project is currently unlicensed.
