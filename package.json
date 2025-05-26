@@ -11,7 +11,7 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/mdx": "^4.3.0",
     "@astrojs/node": "^9.2.1",
     "@astrojs/starlight": "^0.34.3",
     "@tailwindcss/vite": "^4.1.7",
