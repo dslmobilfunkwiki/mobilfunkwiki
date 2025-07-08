@@ -12,12 +12,12 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
-    "@astrojs/node": "^9.2.2",
-    "@astrojs/starlight": "^0.34.3",
-    "@tailwindcss/vite": "^4.1.10",
+    "@astrojs/node": "^9.3.0",
+    "@astrojs/starlight": "^0.34.4",
+    "@tailwindcss/vite": "^4.1.11",
     "@yeskunall/astro-umami": "^0.0.6",
-    "astro": "^5.9.4",
-    "daisyui": "^5.0.43",
+    "astro": "^5.11.0",
+    "daisyui": "^5.0.46",
     "remark-emoji": "^5.0.1",
     "remark-extended-table": "^2.0.3",
     "remark-gfm": "^4.0.1",
@@ -26,7 +26,7 @@
     "starlight-sidebar-topics": "^0.6.0",
     "starlight-sidebar-topics-dropdown": "^0.5.1",
     "starlight-versions": "^0.5.3",
-    "tailwindcss": "^4.1.9"
+    "tailwindcss": "^4.1.11"
   },
   "packageManager": "pnpm@10.9.0",
   "pnpm": {
