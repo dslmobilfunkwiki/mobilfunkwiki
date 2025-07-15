@@ -33,6 +33,6 @@
     "neverBuiltDependencies": []
   },
   "devDependencies": {
-    "sharp": "^0.34.2"
+    "sharp": "^0.34.3"
   }
 }
