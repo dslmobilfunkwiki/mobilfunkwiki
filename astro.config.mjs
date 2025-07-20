@@ -19,11 +19,6 @@ import cloudflare from "@astrojs/cloudflare";
 // @ts-ignore
 export default defineConfig({
   output: "server",
-  image: {
-    service: {
-      entrypoint: "astro/assets/services/sharp",
-    },
-  },
   vite: {
     plugins: [tailwindcss()],
   },
