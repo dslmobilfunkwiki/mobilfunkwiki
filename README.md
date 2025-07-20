@@ -1,54 +1,77 @@
-# Starlight Starter Kit: Basics
+# Mobilfunk.wiki 📱
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-pnpm create astro@latest -- --template starlight
-```
+Das umfassende Wiki für Mobilfunk in Deutschland - unabhängig, aktuell und community-driven.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+## 🚀 Über das Projekt
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Mobilfunk.wiki ist eine offene Informationsquelle für alles rund um Mobilfunk in Deutschland. Hier finden Sie:
 
-## 🚀 Project Structure
+- 📡 **Netzbetreiber**: Detaillierte Infos zu Telekom, Vodafone, O2 und 1&1
+- 💳 **Prepaid-Tarife**: Flexible Angebote ohne Vertragsbindung
+- 📋 **Postpaid-Verträge**: Laufzeitverträge mit allen Konditionen
+- 🔍 **Objektive Vergleiche**: Unabhängige Bewertungen und Tipps
+
+## 🛠️ Technischer Stack
+
+- **Framework**: [Astro](https://astro.build) mit [Starlight](https://starlight.astro.build)
+- **Styling**: TailwindCSS mit DaisyUI
+- **Content**: MDX für erweiterte Markdown-Funktionen
+- **Analytics**: Umami (privacy-friendly)
+- **Deployment**: Node.js Standalone
+
+## 🏗️ Projektstruktur
 
 Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-```
+```bash
 .
-├── public/
+├── public/                 # Statische Assets
 ├── src/
-│   ├── assets/
+│   ├── assets/            # Bilder und Medien  
+│   ├── components/        # Wiederverwendbare Komponenten
 │   ├── content/
-│   │   ├── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+│   │   └── docs/          # Wiki-Inhalte (MDX)
+│   │       ├── allgemein/ # Allgemeine Informationen
+│   │       ├── providers/ # Netzbetreiber-Infos
+│   │       ├── prepaid/   # Prepaid-Tarife
+│   │       └── postpaid/  # Postpaid-Verträge
+│   ├── layouts/           # Seitenlayouts
+│   └── styles/            # Custom CSS
+├── astro.config.mjs       # Astro-Konfiguration
+└── package.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+Das Wiki verwendet MDX-Dateien im `src/content/docs/` Verzeichnis. Jede Datei wird automatisch als Route basierend auf dem Dateinamen bereitgestellt.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+## 🧞 Entwicklung
 
-Static assets, like favicons, can be placed in the `public/` directory.
+Alle Befehle werden im Projektverzeichnis ausgeführt:
 
-## 🧞 Commands
+| Befehl              | Aktion                                    |
+| :------------------ | :---------------------------------------- |
+| `pnpm install`      | Abhängigkeiten installieren               |
+| `pnpm dev`          | Dev-Server starten auf `localhost:9000`  |
+| `pnpm build`        | Produktions-Build erstellen              |
+| `pnpm preview`      | Build lokal testen                        |
+| `pnpm deploy`       | Build und Deploy (Wrangler)              |
 
-All commands are run from the root of the project, from a terminal:
+## 🤝 Beitragen
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+Das Wiki lebt von der Community! Helfen Sie mit:
 
-## 👀 Want to learn more?
+- **📝 Inhalte verbessern**: Veraltete Infos aktualisieren, neue Anbieter hinzufügen
+- **🐛 Fehler melden**: Issues für veraltete Informationen oder technische Probleme
+- **💡 Ideen einbringen**: Verbesserungsvorschläge und neue Features
+
+## 📄 Content-Richtlinien
+
+- ✅ **Sachliche, objektive Informationen**
+- ✅ **Aktuelle Preise und Konditionen** (Stand 2025)
+- ❌ **Keine Werbung** für bestimmte Anbieter
+- ❌ **Keine Affiliate-Links** ohne Kennzeichnung
+
+## � Mehr erfahren
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

@@ -11,28 +11,28 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.2.6",
-    "@astrojs/node": "^9.2.1",
-    "@astrojs/starlight": "^0.34.3",
-    "@tailwindcss/vite": "^4.1.7",
+    "@astrojs/mdx": "^4.3.1",
+    "@astrojs/node": "^9.3.0",
+    "@astrojs/starlight": "^0.35.1",
+    "@tailwindcss/vite": "^4.1.11",
     "@yeskunall/astro-umami": "^0.0.5",
-    "astro": "^5.7.13",
-    "daisyui": "^5.0.35",
+    "astro": "^5.12.0",
+    "daisyui": "^5.0.46",
     "remark-emoji": "^5.0.1",
     "remark-extended-table": "^2.0.3",
     "remark-gfm": "^4.0.1",
-    "starlight-auto-sidebar": "^0.1.1",
+    "starlight-auto-sidebar": "^0.1.2",
     "starlight-heading-badges": "^0.5.0",
     "starlight-sidebar-topics": "^0.6.0",
     "starlight-sidebar-topics-dropdown": "^0.5.1",
-    "starlight-versions": "^0.5.3",
-    "tailwindcss": "^4.1.7"
+    "starlight-versions": "^0.5.4",
+    "tailwindcss": "^4.1.11"
   },
   "packageManager": "pnpm@10.9.0",
   "pnpm": {
     "neverBuiltDependencies": []
   },
   "devDependencies": {
-    "sharp": "^0.34.1"
+    "sharp": "^0.34.3"
   }
 }

@@ -50,34 +50,34 @@ export default defineConfig({
             ],
           },
           {
-            label: "Netzbetreiber & Provider",
+            label: "Netzbetreiber & Netz",
             link: "/providers/",
-            icon: "seti:info",
+            icon: "seti:broadcast",
             items: [
               {
-                label: "Netzbetreiber & Provider",
+                label: "Netzbetreiber & Netz",
                 autogenerate: { directory: "providers" },
               },
             ],
           },
           {
-            label: "Prepaid",
+            label: "Prepaid Tarife",
             link: "/prepaid/",
-            icon: "seti:info",
+            icon: "seti:credit-card",
             items: [
               {
-                label: "Prepaid Anbieter & Marken",
+                label: "Prepaid Tarife",
                 autogenerate: { directory: "prepaid" },
               },
             ],
           },
           {
-            label: "Postpaid",
+            label: "Postpaid Verträge",
             link: "/postpaid/",
-            icon: "seti:info",
+            icon: "seti:document",
             items: [
               {
-                label: "Postpaid Anbieter & Marken",
+                label: "Postpaid Verträge",
                 autogenerate: { directory: "postpaid" },
               },
             ],
