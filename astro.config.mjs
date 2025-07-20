@@ -13,12 +13,17 @@ import remarkGfm from 'remark-gfm'
 
 import yeskunallumami from "@yeskunall/astro-umami";
 
-import node from "@astrojs/node";
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 // @ts-ignore
 export default defineConfig({
   output: "server",
+  image: {
+    service: {
+      entrypoint: "astro/assets/services/sharp",
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
@@ -116,8 +121,6 @@ export default defineConfig({
       endpointUrl: "https://stats.dsl.wiki/",
     }),
   ],
-  adapter: node({
-    mode: "standalone",
-  }),
+  adapter: cloudflare(),
 });
 // https://astro.build/config
