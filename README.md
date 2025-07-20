@@ -23,7 +23,7 @@ Mobilfunk.wiki ist eine offene Informationsquelle für alles rund um Mobilfunk i
 
 ## 🏗️ Projektstruktur
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+Das Projekt ist wie folgt strukturiert:
 
 ```bash
 .
