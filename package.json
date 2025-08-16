@@ -11,22 +11,23 @@
     "deploy": "pnpm run build && wrangler deploy"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.2",
-    "@astrojs/node": "^9.3.2",
+    "@astrojs/cloudflare": "^12.6.4",
+    "@astrojs/mdx": "^4.3.4",
+    "@astrojs/node": "^9.4.2",
     "@astrojs/starlight": "^0.35.2",
-    "@tailwindcss/vite": "^4.1.11",
-    "@yeskunall/astro-umami": "^0.0.5",
-    "astro": "^5.12.7",
+    "@tailwindcss/vite": "^4.1.12",
+    "@yeskunall/astro-umami": "^0.0.6",
+    "astro": "^5.13.2",
     "daisyui": "^5.0.50",
     "remark-emoji": "^5.0.1",
     "remark-extended-table": "^2.0.3",
     "remark-gfm": "^4.0.1",
     "starlight-auto-sidebar": "^0.1.2",
-    "starlight-heading-badges": "^0.5.0",
+    "starlight-heading-badges": "^0.6.0",
     "starlight-sidebar-topics": "^0.6.0",
     "starlight-sidebar-topics-dropdown": "^0.5.1",
     "starlight-versions": "^0.5.4",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.12"
   },
   "packageManager": "pnpm@10.9.0",
   "pnpm": {
