@@ -21,41 +21,7 @@ Mobilfunk.wiki ist eine offene Informationsquelle für alles rund um Mobilfunk i
 - **Analytics**: Umami (privacy-friendly)
 - **Deployment**: Node.js Standalone
 
-## 🏗️ Projektstruktur
-
-Das Projekt ist wie folgt strukturiert:
-
-```bash
-.
-├── public/                 # Statische Assets
-├── src/
-│   ├── assets/            # Bilder und Medien  
-│   ├── components/        # Wiederverwendbare Komponenten
-│   ├── content/
-│   │   └── docs/          # Wiki-Inhalte (MDX)
-│   │       ├── allgemein/ # Allgemeine Informationen
-│   │       ├── providers/ # Netzbetreiber-Infos
-│   │       ├── prepaid/   # Prepaid-Tarife
-│   │       └── postpaid/  # Postpaid-Verträge
-│   ├── layouts/           # Seitenlayouts
-│   └── styles/            # Custom CSS
-├── astro.config.mjs       # Astro-Konfiguration
-└── package.json
-```
-
 Das Wiki verwendet MDX-Dateien im `src/content/docs/` Verzeichnis. Jede Datei wird automatisch als Route basierend auf dem Dateinamen bereitgestellt.
-
-## 🧞 Entwicklung
-
-Alle Befehle werden im Projektverzeichnis ausgeführt:
-
-| Befehl              | Aktion                                    |
-| :------------------ | :---------------------------------------- |
-| `pnpm install`      | Abhängigkeiten installieren               |
-| `pnpm dev`          | Dev-Server starten auf `localhost:9000`  |
-| `pnpm build`        | Produktions-Build erstellen              |
-| `pnpm preview`      | Build lokal testen                        |
-| `pnpm deploy`       | Build und Deploy (Wrangler)              |
 
 ## 🤝 Beitragen
 
