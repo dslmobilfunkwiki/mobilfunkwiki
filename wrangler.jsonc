@@ -1,11 +1,17 @@
 {
-    "name": "mobilfunk-wiki",
-    // Update to today's date
-    "compatibility_date": "2025-03-25",
-    "assets": {
-      "directory": "./dist"
-    },
-    "routes": [
+  "name": "mobilfunk-wiki",
+  // Update to today's date
+  "compatibility_date": "2025-03-25",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "workers_dev": false,
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "routes": [
     {
       "pattern": "mobilfunk.wiki",
       "custom_domain": true
