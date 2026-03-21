@@ -31,5 +31,12 @@
   },
   "devDependencies": {
     "astro-vtbot": "^2.1.12"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
   }
 }
