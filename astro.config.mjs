@@ -78,7 +78,7 @@ export default defineConfig({
         ]),
         starlightHeadingBadges(),
       ],
-      title: "DSL Wiki",
+      title: "Mobilfunk Wiki",
       social: [
         {
           icon: "github",
