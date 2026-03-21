@@ -1,42 +1,35 @@
 // @ts-check
-import { defineConfig, passthroughImageService } from "astro/config";
-import starlight from "@astrojs/starlight";
-import tailwindcss from "@tailwindcss/vite";
-import mdx from "@astrojs/mdx";
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+import tailwindcss from '@tailwindcss/vite';
 
 // starlight plugins
 import starlightHeadingBadges from "starlight-heading-badges";
 import emoji from "remark-emoji";
 import starlightSidebarTopics from "starlight-sidebar-topics";
-import { remarkExtendedTable, extendedTableHandlers } from 'remark-extended-table';
-import remarkGfm from 'remark-gfm'
-
-import yeskunallumami from "@yeskunall/astro-umami";
-
+import {
+  remarkExtendedTable,
+  extendedTableHandlers,
+} from "remark-extended-table";
 import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
-// @ts-ignore
 export default defineConfig({
   output: "server",
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  server: { port: 9000, host: true },
-  site: "https://mobilfunk.wiki",
+  adapter: cloudflare(),
   integrations: [
     starlight({
-      defaultLocale: 'de',
-      lastUpdated: true,
+      defaultLocale: "de",
+      pagination: false,
       editLink: {
-        baseUrl: "https://github.com/dslmobilfunkwiki/mobilfunkwiki/edit/main/",
+        baseUrl: "https://github.com/dslmobilfunkwiki/dslwiki/edit/main/",
       },
       components: {
         // Override the default `Sidebar` component with a custom one.
         Sidebar: "./src/components/Sidebar.astro",
       },
+      lastUpdated: true,
       plugins: [
-        starlightHeadingBadges(),
         starlightSidebarTopics([
           {
             label: "Allgemeine Infos",
@@ -83,39 +76,32 @@ export default defineConfig({
             ],
           },
         ]),
+        starlightHeadingBadges(),
       ],
-      customCss: [
-        // Relative path to your custom CSS file
-        "./src/styles/custom.css",
-      ],
-      title: "Mobilfunk Wiki",
+      title: "DSL Wiki",
       social: [
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/dslmobilfunkwiki/mobilfunkwiki",
+          href: "https://github.com/dslmobilfunkwiki/dslwiki",
         },
       ],
-    }),
-    mdx({
-      // `syntaxHighlight` inherited from Markdown
-
-      // Markdown `remarkPlugins` ignored,
-      // only `remarkPlugin2` applied.
-      remarkPlugins: [emoji,
-        [remarkGfm, {tableCellPadding: false}],
-        [remarkExtendedTable, {tableCellPadding: false}]],
-      // `gfm` overridden to `false`
-      gfm: true,
-      remarkRehype: {
-        handlers: { ...extendedTableHandlers },
-      },
-    }),
-    yeskunallumami({
-      id: "9f05e666-265a-4e30-b90c-14e60c0cdc36",
-      endpointUrl: "https://stats.dsl.wiki/",
+      customCss: ['./src/styles/global.css'],
     }),
   ],
-  adapter: cloudflare(),
+  markdown: {
+    // `syntaxHighlight` inherited from Markdown
+
+    // Markdown `remarkPlugins` ignored,
+    // only `remarkPlugin2` applied.
+    remarkPlugins: [emoji, [remarkExtendedTable, { tableCellPadding: false }]],
+    // `gfm` overridden to `true`
+    gfm: true,
+    remarkRehype: {
+      handlers: { ...extendedTableHandlers },
+    },
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
-// https://astro.build/config

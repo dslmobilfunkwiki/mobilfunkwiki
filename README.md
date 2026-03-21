@@ -1,43 +1,53 @@
-# Mobilfunk.wiki 📱
+# Starlight Starter Kit: Tailwind
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-Das umfassende Wiki für Mobilfunk in Deutschland - unabhängig, aktuell und community-driven.
+```
+pnpm create astro@latest -- --template starlight/tailwind
+```
 
-## 🚀 Über das Projekt
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-Mobilfunk.wiki ist eine offene Informationsquelle für alles rund um Mobilfunk in Deutschland. Hier finden Sie:
+## 🚀 Project Structure
 
-- 📡 **Netzbetreiber**: Detaillierte Infos zu Telekom, Vodafone, O2 und 1&1
-- 💳 **Prepaid-Tarife**: Flexible Angebote ohne Vertragsbindung
-- 📋 **Postpaid-Verträge**: Laufzeitverträge mit allen Konditionen
-- 🔍 **Objektive Vergleiche**: Unabhängige Bewertungen und Tipps
+Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-## 🛠️ Technischer Stack
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   └── docs/
+│   ├── styles/
+│   │   └── global.css
+│   └── content.config.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-- **Framework**: [Astro](https://astro.build) mit [Starlight](https://starlight.astro.build)
-- **Styling**: TailwindCSS mit DaisyUI
-- **Content**: MDX für erweiterte Markdown-Funktionen
-- **Analytics**: Umami (privacy-friendly)
-- **Deployment**: Node.js Standalone
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-Das Wiki verwendet MDX-Dateien im `src/content/docs/` Verzeichnis. Jede Datei wird automatisch als Route basierend auf dem Dateinamen bereitgestellt.
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
-## 🤝 Beitragen
+Static assets, like favicons, can be placed in the `public/` directory.
 
-Das Wiki lebt von der Community! Helfen Sie mit:
+The project includes [Tailwind CSS](https://starlight.astro.build/guides/css-and-tailwind/#tailwind-css) for styling. Customize your design by modifying `src/styles/global.css`.
 
-- **📝 Inhalte verbessern**: Veraltete Infos aktualisieren, neue Anbieter hinzufügen
-- **🐛 Fehler melden**: Issues für veraltete Informationen oder technische Probleme
-- **💡 Ideen einbringen**: Verbesserungsvorschläge und neue Features
+## 🧞 Commands
 
-## 📄 Content-Richtlinien
+All commands are run from the root of the project, from a terminal:
 
-- ✅ **Sachliche, objektive Informationen**
-- ✅ **Aktuelle Preise und Konditionen** (Stand 2025)
-- ❌ **Keine Werbung** für bestimmte Anbieter
-- ❌ **Keine Affiliate-Links** ohne Kennzeichnung
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## � Mehr erfahren
+## 👀 Want to learn more?
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
