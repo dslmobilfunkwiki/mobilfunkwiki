@@ -45,7 +45,7 @@ export default defineConfig({
           {
             label: "Netzbetreiber & Netz",
             link: "/providers/",
-            icon: "seti:broadcast",
+            icon: "seti:info",
             items: [
               {
                 label: "Netzbetreiber & Netz",
@@ -56,7 +56,7 @@ export default defineConfig({
           {
             label: "Prepaid Tarife",
             link: "/prepaid/",
-            icon: "seti:credit-card",
+            icon: "seti:info",
             items: [
               {
                 label: "Prepaid Tarife",
@@ -67,7 +67,7 @@ export default defineConfig({
           {
             label: "Postpaid Verträge",
             link: "/postpaid/",
-            icon: "seti:document",
+            icon: "seti:info",
             items: [
               {
                 label: "Postpaid Verträge",
