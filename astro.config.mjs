@@ -83,7 +83,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/dslmobilfunkwiki/dslwiki",
+          href: "https://github.com/dslmobilfunkwiki/mobilfunkwiki",
         },
       ],
       customCss: ['./src/styles/global.css'],
