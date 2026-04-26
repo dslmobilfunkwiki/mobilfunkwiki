@@ -103,5 +103,11 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    ssr: {
+      noExternal: ['starlight-sidebar-topics'],
+      optimizeDeps: {
+        exclude: ['starlight-sidebar-topics'],
+      },
+    },
   },
 });

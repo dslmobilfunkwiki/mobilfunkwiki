@@ -42,8 +42,8 @@ importers:
         specifier: ^0.34.5
         version: 0.34.5
       starlight-auto-sidebar:
-        specifier: ^0.2.0
-        version: 0.2.0(@astrojs/starlight@0.38.4(astro@6.1.9(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2)(yaml@2.8.3)))
+        specifier: ^0.3.0
+        version: 0.3.0(@astrojs/starlight@0.38.4(astro@6.1.9(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2)(yaml@2.8.3)))
       starlight-heading-badges:
         specifier: ^0.7.0
         version: 0.7.0(@astrojs/starlight@0.38.4(astro@6.1.9(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2)(yaml@2.8.3)))
@@ -1985,8 +1985,8 @@ packages:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
     engines: {node: '>=4'}
 
-  postcss@8.5.10:
-    resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
+  postcss@8.5.11:
+    resolution: {integrity: sha512-5dDj8+lmvA8XB78SmzGI8NlQoksv7IfutGWeVZxiixHbO+p4LDPT3wuG/D9sM/wrjZZ9I+Siy/e117vbFPxSZg==}
     engines: {node: ^10 || ^12 || >=14}
 
   prismjs@1.30.0:
@@ -2153,8 +2153,8 @@ packages:
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
 
-  starlight-auto-sidebar@0.2.0:
-    resolution: {integrity: sha512-iHPAhwnkdkFM84QajJvjKo0twNLg9fU+HrVCxs0QgWAQdYLK9bhM1SxyVPV3O+YBo111mBHryzDA1ChHWUxD1w==}
+  starlight-auto-sidebar@0.3.0:
+    resolution: {integrity: sha512-4ZQXpIA6W8k2ki+2J8NnYyIbvbP8MbuIB6Zls95oJ/tEFYFYLxeOveWYuWKHxyCEJ/JN2k/oMYhUBALvPb25zw==}
     engines: {node: '>=22.12.0'}
     peerDependencies:
       '@astrojs/starlight': '>=0.38.0'
@@ -2897,8 +2897,8 @@ snapshots:
       hast-util-to-html: 9.0.5
       hast-util-to-text: 4.0.2
       hastscript: 9.0.1
-      postcss: 8.5.10
-      postcss-nested: 6.2.0(postcss@8.5.10)
+      postcss: 8.5.11
+      postcss-nested: 6.2.0(postcss@8.5.11)
       unist-util-visit: 5.1.0
       unist-util-visit-parents: 6.0.2
 
@@ -4764,9 +4764,9 @@ snapshots:
 
   picomatch@4.0.4: {}
 
-  postcss-nested@6.2.0(postcss@8.5.10):
+  postcss-nested@6.2.0(postcss@8.5.11):
     dependencies:
-      postcss: 8.5.10
+      postcss: 8.5.11
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.1.2:
@@ -4774,7 +4774,7 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss@8.5.10:
+  postcss@8.5.11:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -5108,7 +5108,7 @@ snapshots:
 
   space-separated-tokens@2.0.2: {}
 
-  starlight-auto-sidebar@0.2.0(@astrojs/starlight@0.38.4(astro@6.1.9(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2)(yaml@2.8.3))):
+  starlight-auto-sidebar@0.3.0(@astrojs/starlight@0.38.4(astro@6.1.9(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2)(yaml@2.8.3))):
     dependencies:
       '@astrojs/starlight': 0.38.4(astro@6.1.9(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.2)(yaml@2.8.3))
       github-slugger: 2.0.0
@@ -5316,7 +5316,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.10
+      postcss: 8.5.11
       rollup: 4.60.2
       tinyglobby: 0.2.16
     optionalDependencies:

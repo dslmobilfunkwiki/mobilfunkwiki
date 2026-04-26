@@ -1,48 +1,38 @@
 ---
 title: Mobilfunk.wiki
 template: splash
-hero:
-  tagline: Wiki für Mobilfunk in Deutschland (WIP)
-  actions:
-    - text: Wiki erkunden
-      link: /allgemein/
-      icon: right-arrow
-      variant: primary
-    - text: Zu den Anbietern
-      link: /providers/
-      icon: external
-      variant: secondary
 ---
 
 import CustomLinkCard from "../../components/CustomLinkCard.astro";
-import { Card, CardGrid } from "@astrojs/starlight/components";
-
-## Hauptbereiche
+import { CardGrid } from "@astrojs/starlight/components";
 
 <CardGrid stagger>
-  <CustomLinkCard title="Allgemeines" icon="pencil" href="/allgemein/">
-    Allgemeine Informationen zur Dokumentation
-  </CustomLinkCard>
   <CustomLinkCard
     title="Netzbetreiber"
     icon="setting"
     href="/providers/"
   >
-    Übersicht über die Netzbetreiber in Deutschland
+    Liste der Infrastrukturanbieter in Deutschland
   </CustomLinkCard>
-      <CustomLinkCard
-    title="Prepaid Anbieter"
+  <CustomLinkCard
+    title="Prepaid"
     icon="setting"
     href="/prepaid/"
   >
-    Übersicht über die Prepaid Anbieter in Deutschland
+    Guthabenbasierte Tarife
   </CustomLinkCard>
-    <CustomLinkCard
-    title="Postpaid Anbieter"
+  <CustomLinkCard
+    title="Postpaid"
     icon="setting"
     href="/postpaid/"
   >
-    Übersicht über die Postpaid Anbieter in Deutschland
+    Laufzeitverträge
   </CustomLinkCard>
-
+  <CustomLinkCard
+    title="Glossar"
+    icon="setting"
+    href="/allgemein/"
+  >
+    Technische Begriffe
+  </CustomLinkCard>
 </CardGrid>
